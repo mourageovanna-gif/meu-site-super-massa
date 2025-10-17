@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MendigoFlix</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Impact;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 70px auto;
+  height: 100vh;
+}
+
+.header {
+  grid-column: 1 / span 2;
+  background-color: rgb(187, 0, 0);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+.sidebar {
+  background-color: #4d4d4d;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 8px 0;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.content {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.cards div {
+  background-color: #9c0000;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 18px;
+  border: 2px solid #980505;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+<div class="header">MendigoFlix</div>
+
+  <div class="sidebar">
+    <h3>Usuário</h3>
+    <h3>Gêneros</h3>
+    <ul>
+      <li>Romance</li>
+      <li>Drama</li>
+      <li>Thriller</li>
+      <li>Terror</li>
+      <li>Comédia</li>
+      <li>Suspense</li>
+      <li>Melodrama</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <section>
+      <h2>Filmes →</h2>
+      <div class="cards">
+        <div>UM DIA</div>
+        <div>MATRIX</div>
+        <div>A CHEGADA</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Séries →</h2>
+      <div class="cards">
+        <div>HANNIBAL</div>
+        <div>TEEN WOLF</div>
+        <div>PEAKY BLINDERS</div>
+      </div>
+    </section>
+  </div>
+</div>
+
+</body>
+</html>
